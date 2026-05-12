@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -7,19 +7,32 @@
   <meta name="description" content="Software de fisioterapia con IA: notas por voz, agenda, informes y facturacion para fisioterapeutas autonomos y clinicas pequenas." />
   <link rel="canonical" href="https://aifisio.es/" />
   <meta name="robots" content="index,follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="logo" href="/">AI.FISIO</a>
+      <a class="logo" href="/">
+        <i data-lucide="activity" class="logo-icon"></i>
+        AI.FISIO
+      </a>
       <nav>
-        <a href="#flujo">Flujo</a>
+        <a href="#flujo">Cómo funciona</a>
         <a href="#beneficios">Beneficios</a>
         <a href="#laia">IA Assistant</a>
         <a href="#pricing">Precios</a>
       </nav>
-      <a class="wa-btn" href="https://wa.me/34614401448">WhatsApp</a>
+      <div class="header-actions">
+        <a class="btn-ghost" href="#">Login</a>
+        <a class="wa-btn" href="https://wa.me/34614401448">
+          <i data-lucide="message-circle"></i>
+          WhatsApp
+        </a>
+      </div>
     </div>
   </header>
 
@@ -27,42 +40,83 @@
     <section class="hero">
       <div class="hero-bg"></div>
       <div class="container hero-grid">
-        <div>
-          <p class="tag">Aprovecha tu tiempo libre para disfrutar</p>
-          <h1>Gana 20 horas a la semana con nuestro software para fisioterapeutas</h1>
+        <div class="reveal">
+          <p class="tag">La evolución de la fisioterapia ya está aquí</p>
+          <h1>Tu clínica, potenciada por <span class="text-gradient">Inteligencia Artificial</span></h1>
+          <p class="hero-subtext">El software diseñado para que te centres en tus pacientes, no en el ordenador. Notas SOAP automáticas, informes instantáneos y gestión inteligente.</p>
           <ul class="checks">
-            <li>Notas por voz durante la exploracion</li>
-            <li>Sesion SOAP e historias clinicas por voz con IA</li>
-            <li>Informes por email en menos de 30 segundos</li>
-            <li>Experiencia mobile-first para tu clinica</li>
+            <li><i data-lucide="mic"></i> Notas por voz en tiempo real</li>
+            <li><i data-lucide="sparkles"></i> Sesión SOAP estructurada por IA</li>
+            <li><i data-lucide="mail"></i> Informes de alta en 30 segundos</li>
+            <li><i data-lucide="smartphone"></i> Experiencia móvil impecable</li>
           </ul>
           <div class="cta-row">
-            <a class="btn" href="https://wa.me/34614401448">PROBAR DEMO GRATIS</a>
-            <span class="note">Migracion incluida. Sin tarjeta.</span>
+            <a class="btn" href="https://wa.me/34614401448">PROBAR DEMO GRATUITA</a>
+            <div class="trust-badge">
+              <div class="avatars">
+                <img src="https://i.pravatar.cc/100?u=1" alt="User" />
+                <img src="https://i.pravatar.cc/100?u=2" alt="User" />
+                <img src="https://i.pravatar.cc/100?u=3" alt="User" />
+              </div>
+              <span>+500 fisios ya lo usan</span>
+            </div>
           </div>
         </div>
-        <div class="hero-shot">
-          <img src="assets/images/hero-dashboard.svg" alt="Software de gestion de fisioterapia" />
+        <div class="hero-shot reveal delay-1">
+          <div class="glass-card">
+            <img src="assets/images/hero-dashboard.png" alt="Software de gestion de fisioterapia" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-section">
+      <div class="container">
+        <p>CONFIANZA POR CLÍNICAS DE TODA ESPAÑA</p>
+        <div class="logo-cloud">
+          <span class="dummy-logo"><i data-lucide="shield"></i> FisioHealth</span>
+          <span class="dummy-logo"><i data-lucide="heart"></i> VitalClinic</span>
+          <span class="dummy-logo"><i data-lucide="zap"></i> PowerFisio</span>
+          <span class="dummy-logo"><i data-lucide="activity"></i> MotionCenter</span>
         </div>
       </div>
     </section>
 
     <section class="section screenshot-strip">
       <div class="container gallery-3">
-        <img src="assets/images/hero-dashboard.svg" alt="Dashboard AI.FISIO" />
-        <img src="assets/images/screen-1.svg" alt="Modulo clinico AI.FISIO" />
-        <img src="assets/images/screen-2.svg" alt="Agenda y flujos AI.FISIO" />
+        <img src="assets/images/hero-dashboard.png" alt="Dashboard AI.FISIO" />
+        <img src="assets/images/screen-1.png" alt="Modulo clinico AI.FISIO" />
+        <img src="assets/images/screen-2.png" alt="Agenda y flujos AI.FISIO" />
       </div>
     </section>
 
     <section id="flujo" class="section light">
       <div class="container">
-        <h2>El flujo perfecto para tu clinica de fisioterapia</h2>
-        <div class="grid4">
-          <article><h3>1. Turnos</h3><p>Organiza salas y personal con flexibilidad total.</p></article>
-          <article><h3>2. Agenda IA</h3><p>Recordatorios y huecos optimizados automaticamente.</p></article>
-          <article><h3>3. Sesion clinica</h3><p>Dictado por voz y estructura SOAP con IA.</p></article>
-          <article><h3>4. Cobro y factura</h3><p>Registra pagos y genera factura legal en segundos.</p></article>
+        <div class="section-header reveal">
+          <h2>El flujo perfecto para tu día a día</h2>
+          <p>Hemos optimizado cada paso para que la gestión sea invisible.</p>
+        </div>
+        <div class="grid4 reveal delay-1">
+          <article class="feature-card">
+            <div class="icon-box"><i data-lucide="calendar"></i></div>
+            <h3>1. Agenda Inteligente</h3>
+            <p>Organiza salas, personal y pacientes con facilidad extrema.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon-box"><i data-lucide="bell"></i></div>
+            <h3>2. Recordatorios</h3>
+            <p>Reduce el absentismo con avisos automáticos por WhatsApp/Email.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon-box"><i data-lucide="mic-2"></i></div>
+            <h3>3. Sesión con IA</h3>
+            <p>Dicta tus notas SOAP mientras trabajas. La IA hace el resto.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon-box"><i data-lucide="file-text"></i></div>
+            <h3>4. Informes y Factura</h3>
+            <p>Genera documentación legal y cobros en un solo click.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -82,23 +136,147 @@
 
     <section id="laia" class="section light">
       <div class="container">
-        <h2>LO QUE LAIA HACE POR TI</h2>
-        <div class="grid4">
-          <article><h3>Dictado por voz</h3><p>Habla y olvida el teclado.</p></article>
-          <article><h3>Informes en 30s</h3><p>Informes evolutivos y de alta instantaneos.</p></article>
-          <article><h3>Anamnesis IA</h3><p>Detecta datos clave automaticamente.</p></article>
-          <article><h3>Rutinas IA</h3><p>Sugerencias de trabajo terapeutico personalizado.</p></article>
+        <div class="section-header reveal">
+          <h2>Conoce a LAIA</h2>
+          <p>Tu asistente de inteligencia artificial personal que nunca descansa.</p>
+        </div>
+        <div class="grid4 reveal delay-1">
+          <article class="feature-card">
+            <div class="icon-box brand"><i data-lucide="languages"></i></div>
+            <h3>Dictado Multi-idioma</h3>
+            <p>Habla en español, catalán o inglés. LAIA te entiende siempre.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon-box brand"><i data-lucide="zap"></i></div>
+            <h3>Resúmenes SOAP</h3>
+            <p>Convierte 10 minutos de charla en una nota clínica perfecta.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon-box brand"><i data-lucide="clipboard-check"></i></div>
+            <h3>Detección de Datos</h3>
+            <p>Detecta banderas rojas y datos clave automáticamente.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon-box brand"><i data-lucide="dumbbell"></i></div>
+            <h3>Sugerencias de Ejercicios</h3>
+            <p>IA que propone rutinas basadas en la patología del paciente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Testimonios Reales</h2>
+          <p>Lo que dicen los profesionales que ya han dado el salto.</p>
+        </div>
+        <div class="grid3 reveal delay-1">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Antes tardaba 2 horas al día en informes. Con AI.FISIO lo hago en minutos mientras el paciente se viste."</p>
+            <div class="user-info">
+              <img src="https://i.pravatar.cc/100?u=4" alt="Fisio" />
+              <div>
+                <strong>Carlos Ruiz</strong>
+                <span>Fisioterapeuta Deportivo</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"La IA de LAIA es sorprendentemente precisa. Entiende términos técnicos y estructura las notas perfectamente."</p>
+            <div class="user-info">
+              <img src="https://i.pravatar.cc/100?u=5" alt="Fisio" />
+              <div>
+                <strong>Elena García</strong>
+                <span>Directora de Clínica</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Mis pacientes valoran muchísimo recibir el informe en su email antes de salir de la consulta. Es muy profesional."</p>
+            <div class="user-info">
+              <img src="https://i.pravatar.cc/100?u=6" alt="Fisio" />
+              <div>
+                <strong>Marc Soler</strong>
+                <span>Fisioterapeuta Autónomo</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="pricing" class="section">
       <div class="container">
-        <h2>PLANES PREMIUM</h2>
-        <div class="grid3">
-          <article><h3>PROFESIONAL</h3><p class="price">29,90EUR/mes + IVA</p><p>Hasta 2 fisios, agendas ilimitadas y notas SOAP por voz.</p></article>
-          <article class="featured"><h3>CLINICA</h3><p class="price">79,90EUR/mes + IVA</p><p>De 3 a 5 empleados, informes IA avanzados.</p></article>
-          <article><h3>ELITE</h3><p class="price">Custom</p><p>Multisede, API e integraciones a medida.</p></article>
+        <div class="section-header reveal">
+          <h2>Planes que crecen contigo</h2>
+          <p>Sin permanencia. Sin comisiones ocultas. Cancela cuando quieras.</p>
+        </div>
+        <div class="grid3 reveal delay-1">
+          <article class="price-card">
+            <h3>PROFESIONAL</h3>
+            <p class="price">29,90€<span>/mes</span></p>
+            <ul class="feature-list">
+              <li><i data-lucide="check"></i> Hasta 2 fisioterapeutas</li>
+              <li><i data-lucide="check"></i> Agendas ilimitadas</li>
+              <li><i data-lucide="check"></i> Notas SOAP por voz</li>
+              <li><i data-lucide="check"></i> Recordatorios WhatsApp</li>
+            </ul>
+            <a href="#" class="btn-outline">Empezar ahora</a>
+          </article>
+          <article class="price-card featured">
+            <div class="popular-tag">MÁS POPULAR</div>
+            <h3>CLÍNICA</h3>
+            <p class="price">79,90€<span>/mes</span></p>
+            <ul class="feature-list">
+              <li><i data-lucide="check"></i> De 3 a 5 empleados</li>
+              <li><i data-lucide="check"></i> Informes IA avanzados</li>
+              <li><i data-lucide="check"></i> Gestión de salas y bonos</li>
+              <li><i data-lucide="check"></i> Soporte prioritario</li>
+            </ul>
+            <a href="#" class="btn">Probar 14 días gratis</a>
+          </article>
+          <article class="price-card">
+            <h3>ELITE</h3>
+            <p class="price">Custom</p>
+            <ul class="feature-list">
+              <li><i data-lucide="check"></i> Multisede ilimitada</li>
+              <li><i data-lucide="check"></i> API para integraciones</li>
+              <li><i data-lucide="check"></i> Formación personalizada</li>
+              <li><i data-lucide="check"></i> Servidor dedicado</li>
+            </ul>
+            <a href="#" class="btn-outline">Contactar ventas</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Preguntas Frecuentes</h2>
+          <p>Todo lo que necesitas saber sobre AI.FISIO.</p>
+        </div>
+        <div class="faq-grid reveal delay-1">
+          <div class="faq-item">
+            <h4>¿Es difícil de configurar?</h4>
+            <p>Para nada. Te ayudamos con la migración de tus datos actuales gratis y estarás funcionando en menos de 24 horas.</p>
+          </div>
+          <div class="faq-item">
+            <h4>¿La IA realmente entiende términos médicos?</h4>
+            <p>Sí, LAIA ha sido entrenada con miles de sesiones de fisioterapia y entiende perfectamente la terminología técnica en varios idiomas.</p>
+          </div>
+          <div class="faq-item">
+            <h4>¿Mis datos están seguros?</h4>
+            <p>Cumplimos estrictamente con la RGPD. Tus datos están encriptados y alojados en servidores seguros en Europa.</p>
+          </div>
+          <div class="faq-item">
+            <h4>¿Puedo usarlo en mi móvil?</h4>
+            <p>AI.FISIO es una aplicación web progresiva, lo que significa que funciona perfectamente en cualquier móvil, tablet u ordenador.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -112,10 +290,83 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container foot">
-      <p><strong>AI.FISIO</strong> | hola@aifisio.com | +34 614 401 448</p>
-      <p>Version V12 visual con imagenes</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="#">AI.FISIO</a>
+          <p>La plataforma definitiva para el fisioterapeuta del futuro. Potenciamos tu talento con Inteligencia Artificial.</p>
+          <div class="social-links">
+            <a href="#"><i data-lucide="instagram"></i></a>
+            <a href="#"><i data-lucide="linkedin"></i></a>
+            <a href="#"><i data-lucide="twitter"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Producto</h4>
+          <ul class="footer-links">
+            <li><a href="#flujo">Cómo funciona</a></li>
+            <li><a href="#laia">IA Assistant</a></li>
+            <li><a href="#pricing">Precios</a></li>
+            <li><a href="#">Roadmap</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Recursos</h4>
+          <ul class="footer-links">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Guías</a></li>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="#">Webinars</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul class="footer-links">
+            <li><i data-lucide="mail"></i> hola@aifisio.es</li>
+            <li><i data-lucide="phone"></i> +34 614 401 448</li>
+            <li><i data-lucide="map-pin"></i> Barcelona, España</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 AI.FISIO. Todos los derechos reservados.</p>
+        <div class="legal-links">
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
     </div>
   </footer>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Reveal Animations on Scroll
+    const observerOptions = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Header Scroll Effect
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('.site-header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>
