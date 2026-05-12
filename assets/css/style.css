@@ -8,13 +8,18 @@ body{margin:0;font-family:Segoe UI,Tahoma,sans-serif;background:var(--bg);color:
 nav{display:flex;gap:1rem}
 nav a{text-decoration:none;color:var(--ink);font-weight:600}
 .wa-btn{background:#25d366;color:#fff;text-decoration:none;padding:.5rem .8rem;border-radius:10px;font-weight:700}
-.hero{padding:3.8rem 0}
+.hero{padding:3.8rem 0;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(circle at 10% 10%,#d4f3f8 0%,transparent 40%),radial-gradient(circle at 90% 10%,#dbf0e3 0%,transparent 35%);z-index:-1}
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:1.2rem;align-items:center}
 .tag{display:inline-block;padding:.3rem .6rem;border:1px solid #bdeaf0;border-radius:999px;color:#117b89;background:#fff;font-size:.85rem}
 h1{font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:.7rem 0}
 .checks{padding-left:1.1rem}
 .checks li{margin:.35rem 0}
 img{max-width:100%;display:block;border-radius:14px;border:1px solid #cfe3d7}
+.hero-shot img{box-shadow:0 22px 45px rgba(16,45,30,.15)}
+.screenshot-strip{padding-top:.5rem}
+.gallery-3{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
+.gallery-3 img{height:220px;object-fit:cover}
 .cta-row{display:flex;gap:.8rem;align-items:center;flex-wrap:wrap;margin-top:1rem}
 .btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;padding:.85rem 1.1rem;border-radius:10px;font-weight:800}
 .note{color:#506258;font-size:.9rem}
@@ -32,4 +37,4 @@ article,.card{background:#fff;border:1px solid var(--line);border-radius:14px;pa
 .cta{background:linear-gradient(120deg,#0f6d41,#1b8a57);color:#fff;text-align:center}
 .site-footer{border-top:1px solid var(--line);padding:1.2rem 0;background:#fff}
 .foot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-@media (max-width:940px){nav{display:none}.hero-grid,.grid4,.grid3,.split{grid-template-columns:1fr}}
+@media (max-width:940px){nav{display:none}.hero-grid,.grid4,.grid3,.split,.gallery-3{grid-template-columns:1fr}.gallery-3 img{height:auto}}
