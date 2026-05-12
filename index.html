@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI.FISIO | Software de Gestion para Fisioterapeutas con IA</title>
+  <title>AI.FISIO | Software de Gestión para Fisioterapeutas con IA</title>
   <meta name="description" content="Software de fisioterapia con IA: notas por voz, agenda, informes y facturacion para fisioterapeutas autonomos y clinicas pequenas." />
   <link rel="canonical" href="https://aifisio.es/" />
   <meta name="robots" content="index,follow" />
@@ -21,9 +21,9 @@
         AI.FISIO
       </a>
       <nav>
-        <a href="#flujo">Cómo funciona</a>
         <a href="#beneficios">Beneficios</a>
         <a href="#laia">IA Assistant</a>
+        <a href="#flujo">Cómo funciona</a>
         <a href="#pricing">Precios</a>
       </nav>
       <div class="header-actions">
@@ -37,6 +37,7 @@
   </header>
 
   <main>
+    <!-- 1. Hero -->
     <section class="hero">
       <div class="hero-bg"></div>
       <div class="container hero-grid">
@@ -70,138 +71,190 @@
       </div>
     </section>
 
+    <!-- 2. Trust Bar -->
     <section class="trust-section">
       <div class="container">
-        <p>CONFIANZA POR CLÍNICAS DE TODA ESPAÑA</p>
-        <div class="logo-cloud">
-          <span class="dummy-logo"><i data-lucide="shield"></i> FisioHealth</span>
-          <span class="dummy-logo"><i data-lucide="heart"></i> VitalClinic</span>
-          <span class="dummy-logo"><i data-lucide="zap"></i> PowerFisio</span>
-          <span class="dummy-logo"><i data-lucide="activity"></i> MotionCenter</span>
+        <p>CON LA CONFIANZA DE +500 CLÍNICAS EN ESPAÑA</p>
+        <div class="logo-marquee">
+          <div class="logo-track">
+            <div class="dummy-logo"><i data-lucide="activity"></i> FisioCloud</div>
+            <div class="dummy-logo"><i data-lucide="heart-pulse"></i> Clinica Premium</div>
+            <div class="dummy-logo"><i data-lucide="shield-check"></i> SaludTotal</div>
+            <div class="dummy-logo"><i data-lucide="stethoscope"></i> SportFisio</div>
+            <div class="dummy-logo"><i data-lucide="layers"></i> MedTech</div>
+            <!-- Duplicate for infinite scroll -->
+            <div class="dummy-logo"><i data-lucide="activity"></i> FisioCloud</div>
+            <div class="dummy-logo"><i data-lucide="heart-pulse"></i> Clinica Premium</div>
+            <div class="dummy-logo"><i data-lucide="shield-check"></i> SaludTotal</div>
+            <div class="dummy-logo"><i data-lucide="stethoscope"></i> SportFisio</div>
+            <div class="dummy-logo"><i data-lucide="layers"></i> MedTech</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section screenshot-strip">
-      <div class="container gallery-3">
-        <img src="assets/images/hero-dashboard.png" alt="Dashboard AI.FISIO" />
-        <img src="assets/images/screen-1.png" alt="Modulo clinico AI.FISIO" />
-        <img src="assets/images/screen-2.png" alt="Agenda y flujos AI.FISIO" />
-      </div>
-    </section>
-
-    <section id="flujo" class="section light">
+    <!-- 3. Problem & Solution Section -->
+    <section id="beneficios" class="section reveal">
       <div class="container">
-        <div class="section-header reveal">
-          <h2>El flujo perfecto para tu día a día</h2>
-          <p>Hemos optimizado cada paso para que la gestión sea invisible.</p>
+        <div class="section-header">
+          <span class="tag">EL PROBLEMA</span>
+          <h2>Basta de perder 2 horas al día en informes</h2>
+          <p>La burocracia te quita tiempo con tus pacientes. IA.FISIO te lo devuelve.</p>
         </div>
-        <div class="grid4 reveal delay-1">
-          <article class="feature-card">
-            <div class="icon-box"><i data-lucide="calendar"></i></div>
-            <h3>1. Agenda Inteligente</h3>
-            <p>Organiza salas, personal y pacientes con facilidad extrema.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon-box"><i data-lucide="bell"></i></div>
-            <h3>2. Recordatorios</h3>
-            <p>Reduce el absentismo con avisos automáticos por WhatsApp/Email.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon-box"><i data-lucide="mic-2"></i></div>
-            <h3>3. Sesión con IA</h3>
-            <p>Dicta tus notas SOAP mientras trabajas. La IA hace el resto.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon-box"><i data-lucide="file-text"></i></div>
-            <h3>4. Informes y Factura</h3>
-            <p>Genera documentación legal y cobros en un solo click.</p>
-          </article>
+
+        <div class="split">
+          <div class="card bad">
+            <div class="icon-box" style="background: #fee2e2; color: #ef4444;">
+              <i data-lucide="x-circle"></i>
+            </div>
+            <h3>Antes: Caos Administrativo</h3>
+            <ul class="checks" style="--green: #ef4444">
+              <li><i data-lucide="alert-circle"></i> Horas escribiendo notas a mano</li>
+              <li><i data-lucide="alert-circle"></i> Errores en la codificación CIE-10</li>
+              <li><i data-lucide="alert-circle"></i> Agotamiento mental al final del día</li>
+            </ul>
+          </div>
+          <div class="card good">
+            <div class="icon-box brand">
+              <i data-lucide="sparkles"></i>
+            </div>
+            <h3>Ahora: Magia con IA</h3>
+            <ul class="checks">
+              <li><i data-lucide="check-circle"></i> Dictado por voz ultra-preciso</li>
+              <li><i data-lucide="check-circle"></i> Generación automática de ejercicios</li>
+              <li><i data-lucide="check-circle"></i> 100% centrado en el paciente</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="beneficios" class="section">
-      <div class="container split">
-        <div class="card bad">
-          <h3>Manual = Burnout</h3>
-          <p>Horas perdidas en informes, caos de agenda y cobros olvidados.</p>
-        </div>
-        <div class="card good">
-          <h3>AI.FISIO = Libertad</h3>
-          <p>Mas tiempo clinico, mejor control y menos friccion operativa.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="laia" class="section light">
+    <!-- 4. LAIA AI Section -->
+    <section id="laia" class="section light reveal">
       <div class="container">
-        <div class="section-header reveal">
-          <h2>Conoce a LAIA</h2>
-          <p>Tu asistente de inteligencia artificial personal que nunca descansa.</p>
-        </div>
-        <div class="grid4 reveal delay-1">
-          <article class="feature-card">
-            <div class="icon-box brand"><i data-lucide="languages"></i></div>
-            <h3>Dictado Multi-idioma</h3>
-            <p>Habla en español, catalán o inglés. LAIA te entiende siempre.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon-box brand"><i data-lucide="zap"></i></div>
-            <h3>Resúmenes SOAP</h3>
-            <p>Convierte 10 minutos de charla en una nota clínica perfecta.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon-box brand"><i data-lucide="clipboard-check"></i></div>
-            <h3>Detección de Datos</h3>
-            <p>Detecta banderas rojas y datos clave automáticamente.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon-box brand"><i data-lucide="dumbbell"></i></div>
-            <h3>Sugerencias de Ejercicios</h3>
-            <p>IA que propone rutinas basadas en la patología del paciente.</p>
-          </article>
+        <div class="hero-grid">
+          <div class="laia-visual">
+            <div class="ai-chat-mockup">
+              <div class="chat-header">
+                <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+                <span>LAIA AI Assistant</span>
+              </div>
+              <div class="chat-body">
+                <div class="msg bot">"Hola, he analizado la sesión de hoy. ¿Quieres que genere el plan de ejercicios para el esguince de tobillo?"</div>
+                <div class="msg user">"Sí, por favor. Añade ejercicios de propiocepción."</div>
+                <div class="msg bot sparkles">"Plan generado con 5 ejercicios específicos. ¿Lo envío al paciente?"</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span class="tag">TECNOLOGÍA PROPIA</span>
+            <h2>Conoce a LAIA: Tu nueva asistente inteligente</h2>
+            <p class="hero-subtext">No es solo dictado. LAIA entiende el contexto clínico, sugiere diagnósticos y personaliza tratamientos en segundos.</p>
+            <div class="grid2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem;">
+              <div class="mini-feat">
+                <i data-lucide="brain-circuit" style="color: var(--brand)"></i>
+                <h4>Razonamiento Clínico</h4>
+              </div>
+              <div class="mini-feat">
+                <i data-lucide="message-square" style="color: var(--brand)"></i>
+                <h4>Natural Language</h4>
+              </div>
+            </div>
+            <a href="#" class="btn" style="margin-top: 2rem;">Ver demostración</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- 5. Workflow / How it works -->
+    <section id="flujo" class="section reveal">
       <div class="container">
-        <div class="section-header reveal">
-          <h2>Testimonios Reales</h2>
-          <p>Lo que dicen los profesionales que ya han dado el salto.</p>
+        <div class="section-header">
+          <h2>Flujo de trabajo optimizado</h2>
+          <p>Tres pasos para una consulta 100% eficiente.</p>
         </div>
-        <div class="grid3 reveal delay-1">
+        <div class="grid3">
+          <div class="feature-card">
+            <div class="icon-box brand">1</div>
+            <h3>Escucha Activa</h3>
+            <p>Atiende a tu paciente mientras el sistema capta los puntos clave de la conversación de forma segura.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-box brand">2</div>
+            <h3>Validación</h3>
+            <p>Revisa el resumen generado por la IA. Corrige o añade detalles con un simple comando de voz.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-box brand">3</div>
+            <h3>Sincronización</h3>
+            <p>Exporta directamente a tu software de gestión actual o envía el plan de ejercicios por WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Screenshot Showcase -->
+    <section id="product" class="section light reveal">
+      <div class="container">
+        <div class="section-header">
+          <h2>Diseñado por y para fisios</h2>
+          <p>Una interfaz limpia que se adapta a tu ritmo, no al revés.</p>
+        </div>
+        <div class="gallery-3">
+          <div class="gallery-item">
+            <img src="assets/images/screen-1.png" alt="Módulo Clínico">
+            <span>Historial Inteligente</span>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/screen-2.png" alt="App Móvil">
+            <span>Control Total Móvil</span>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/hero-dashboard.png" alt="Dashboard Principal">
+            <span>Panel de Gestión</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Testimonials -->
+    <section class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <h2>Lo que dicen tus colegas</h2>
+          <p>Fisioterapeutas que ya han recuperado su tiempo libre.</p>
+        </div>
+        <div class="grid3">
           <div class="testimonial-card">
             <div class="stars">★★★★★</div>
-            <p>"Antes tardaba 2 horas al día en informes. Con AI.FISIO lo hago en minutos mientras el paciente se viste."</p>
-            <div class="user-info">
-              <img src="https://i.pravatar.cc/100?u=4" alt="Fisio" />
+            <p>"IA.FISIO ha cambiado mi forma de trabajar. Ahora salgo de la clínica a mi hora sin informes pendientes."</p>
+            <div class="user-info" style="margin-top: auto; display: flex; align-items: center; gap: 1rem; padding-top: 2rem;">
+              <img src="https://i.pravatar.cc/100?u=4" alt="Fisio" style="width: 40px; height: 40px; border-radius: 50%;" />
               <div>
                 <strong>Carlos Ruiz</strong>
-                <span>Fisioterapeuta Deportivo</span>
+                <div style="font-size: 0.8rem; color: var(--ink-light)">Director, Fisiolab</div>
               </div>
             </div>
           </div>
           <div class="testimonial-card">
             <div class="stars">★★★★★</div>
-            <p>"La IA de LAIA es sorprendentemente precisa. Entiende términos técnicos y estructura las notas perfectamente."</p>
-            <div class="user-info">
-              <img src="https://i.pravatar.cc/100?u=5" alt="Fisio" />
+            <p>"La precisión de LAIA con los términos anatómicos es sorprendente. Ahorro al menos 15 minutos por paciente."</p>
+            <div class="user-info" style="margin-top: auto; display: flex; align-items: center; gap: 1rem; padding-top: 2rem;">
+              <img src="https://i.pravatar.cc/100?u=5" alt="Fisio" style="width: 40px; height: 40px; border-radius: 50%;" />
               <div>
-                <strong>Elena García</strong>
-                <span>Directora de Clínica</span>
+                <strong>Dra. Elena García</strong>
+                <div style="font-size: 0.8rem; color: var(--ink-light)">Especialista Suelo Pélvico</div>
               </div>
             </div>
           </div>
           <div class="testimonial-card">
             <div class="stars">★★★★★</div>
-            <p>"Mis pacientes valoran muchísimo recibir el informe en su email antes de salir de la consulta. Es muy profesional."</p>
-            <div class="user-info">
-              <img src="https://i.pravatar.cc/100?u=6" alt="Fisio" />
+            <p>"Mis pacientes valoran muchísimo recibir el plan de ejercicios personalizado al instante en su móvil."</p>
+            <div class="user-info" style="margin-top: auto; display: flex; align-items: center; gap: 1rem; padding-top: 2rem;">
+              <img src="https://i.pravatar.cc/100?u=6" alt="Fisio" style="width: 40px; height: 40px; border-radius: 50%;" />
               <div>
                 <strong>Marc Soler</strong>
-                <span>Fisioterapeuta Autónomo</span>
+                <div style="font-size: 0.8rem; color: var(--ink-light)">Fisio Deportivo</div>
               </div>
             </div>
           </div>
@@ -209,82 +262,92 @@
       </div>
     </section>
 
-    <section id="pricing" class="section">
+    <!-- 8. Pricing -->
+    <section id="pricing" class="section light reveal">
       <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header">
           <h2>Planes que crecen contigo</h2>
-          <p>Sin permanencia. Sin comisiones ocultas. Cancela cuando quieras.</p>
+          <p>Prueba gratis 14 días. Sin tarjeta de crédito.</p>
         </div>
-        <div class="grid3 reveal delay-1">
-          <article class="price-card">
-            <h3>PROFESIONAL</h3>
-            <p class="price">29,90€<span>/mes</span></p>
+        <div class="grid3" style="align-items: end;">
+          <div class="price-card">
+            <h3>BÁSICO</h3>
+            <div class="price">29€<span>/mes</span></div>
+            <p>Para fisios autónomos.</p>
             <ul class="feature-list">
-              <li><i data-lucide="check"></i> Hasta 2 fisioterapeutas</li>
-              <li><i data-lucide="check"></i> Agendas ilimitadas</li>
-              <li><i data-lucide="check"></i> Notas SOAP por voz</li>
-              <li><i data-lucide="check"></i> Recordatorios WhatsApp</li>
+              <li><i data-lucide="check"></i> 30 informes/mes</li>
+              <li><i data-lucide="check"></i> App Móvil incluida</li>
+              <li><i data-lucide="check"></i> Soporte por Email</li>
             </ul>
             <a href="#" class="btn-outline">Empezar ahora</a>
-          </article>
-          <article class="price-card featured">
-            <div class="popular-tag">MÁS POPULAR</div>
+          </div>
+          <div class="price-card featured">
+            <div class="popular-tag">RECOMENDADO</div>
             <h3>CLÍNICA</h3>
-            <p class="price">79,90€<span>/mes</span></p>
+            <div class="price">79€<span>/mes</span></div>
+            <p>Para centros con equipo.</p>
             <ul class="feature-list">
-              <li><i data-lucide="check"></i> De 3 a 5 empleados</li>
-              <li><i data-lucide="check"></i> Informes IA avanzados</li>
-              <li><i data-lucide="check"></i> Gestión de salas y bonos</li>
-              <li><i data-lucide="check"></i> Soporte prioritario</li>
+              <li><i data-lucide="check"></i> Informes ilimitados</li>
+              <li><i data-lucide="check"></i> Hasta 5 profesionales</li>
+              <li><i data-lucide="check"></i> Generador de ejercicios</li>
+              <li><i data-lucide="check"></i> Soporte Prioritario</li>
             </ul>
-            <a href="#" class="btn">Probar 14 días gratis</a>
-          </article>
-          <article class="price-card">
-            <h3>ELITE</h3>
-            <p class="price">Custom</p>
+            <a href="#" class="btn">Prueba Gratuita</a>
+          </div>
+          <div class="price-card">
+            <h3>ENTERPRISE</h3>
+            <div class="price">Custom</div>
+            <p>Grandes centros y hospitales.</p>
             <ul class="feature-list">
-              <li><i data-lucide="check"></i> Multisede ilimitada</li>
-              <li><i data-lucide="check"></i> API para integraciones</li>
-              <li><i data-lucide="check"></i> Formación personalizada</li>
-              <li><i data-lucide="check"></i> Servidor dedicado</li>
+              <li><i data-lucide="check"></i> API Integración</li>
+              <li><i data-lucide="check"></i> Servidor Dedicado</li>
+              <li><i data-lucide="check"></i> Formación presencial</li>
             </ul>
             <a href="#" class="btn-outline">Contactar ventas</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section light">
-      <div class="container">
-        <div class="section-header reveal">
-          <h2>Preguntas Frecuentes</h2>
-          <p>Todo lo que necesitas saber sobre AI.FISIO.</p>
-        </div>
-        <div class="faq-grid reveal delay-1">
-          <div class="faq-item">
-            <h4>¿Es difícil de configurar?</h4>
-            <p>Para nada. Te ayudamos con la migración de tus datos actuales gratis y estarás funcionando en menos de 24 horas.</p>
-          </div>
-          <div class="faq-item">
-            <h4>¿La IA realmente entiende términos médicos?</h4>
-            <p>Sí, LAIA ha sido entrenada con miles de sesiones de fisioterapia y entiende perfectamente la terminología técnica en varios idiomas.</p>
-          </div>
-          <div class="faq-item">
-            <h4>¿Mis datos están seguros?</h4>
-            <p>Cumplimos estrictamente con la RGPD. Tus datos están encriptados y alojados en servidores seguros en Europa.</p>
-          </div>
-          <div class="faq-item">
-            <h4>¿Puedo usarlo en mi móvil?</h4>
-            <p>AI.FISIO es una aplicación web progresiva, lo que significa que funciona perfectamente en cualquier móvil, tablet u ordenador.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section cta">
+    <!-- 9. FAQ -->
+    <section class="section reveal">
       <div class="container">
-        <h2>Listo para transformar tu clinica ahora?</h2>
-        <a class="btn" href="https://wa.me/34614401448">Empieza tu prueba gratis</a>
+        <div class="section-header">
+          <h2>Preguntas frecuentes</h2>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h4>¿Es seguro para los datos de pacientes?</h4>
+            <p>Cumplimos estrictamente con la RGPD. Todos los datos están encriptados y alojados en servidores seguros en la UE.</p>
+          </div>
+          <div class="faq-item">
+            <h4>¿Tengo que instalar algo?</h4>
+            <p>No, IA.FISIO es 100% web. Funciona en cualquier navegador de PC, Tablet o Smartphone.</p>
+          </div>
+          <div class="faq-item">
+            <h4>¿Puedo cancelar en cualquier momento?</h4>
+            <p>Sí, no hay compromiso de permanencia. Puedes darte de baja cuando quieras desde tu panel.</p>
+          </div>
+          <div class="faq-item">
+            <h4>¿Funciona con mi software actual?</h4>
+            <p>Sí, puedes copiar y pegar el contenido generado o usar nuestra extensión de Chrome para integrarlo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Final CTA -->
+    <section class="cta reveal">
+      <div class="container">
+        <span class="tag" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: white;">DISPONIBLE HOY</span>
+        <h2>Recupera tu tiempo hoy mismo</h2>
+        <p class="hero-subtext" style="color: #cbd5e1; margin-left: auto; margin-right: auto;">Únete a los profesionales que están definiendo el futuro de la fisioterapia.</p>
+        <div class="cta-row" style="justify-content: center;">
+          <a href="#" class="btn">Comenzar Prueba Gratuita</a>
+          <a href="https://wa.me/34614401448" class="wa-btn" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">
+            <i data-lucide="phone"></i> Hablar con un experto
+          </a>
+        </div>
       </div>
     </section>
   </main>
@@ -292,58 +355,67 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <a class="logo" href="#">AI.FISIO</a>
-          <p>La plataforma definitiva para el fisioterapeuta del futuro. Potenciamos tu talento con Inteligencia Artificial.</p>
-          <div class="social-links">
-            <a href="#"><i data-lucide="instagram"></i></a>
-            <a href="#"><i data-lucide="linkedin"></i></a>
-            <a href="#"><i data-lucide="twitter"></i></a>
+        <div>
+          <a href="#" class="logo">
+            <i data-lucide="zap" class="logo-icon"></i> AI.FISIO
+          </a>
+          <p style="color: var(--ink-light); margin-top: 1.5rem;">Potenciando el razonamiento clínico con inteligencia artificial de vanguardia.</p>
+          <div class="socials" style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+            <a href="#" style="color: var(--ink-light)"><i data-lucide="instagram"></i></a>
+            <a href="#" style="color: var(--ink-light)"><i data-lucide="linkedin"></i></a>
+            <a href="#" style="color: var(--ink-light)"><i data-lucide="twitter"></i></a>
           </div>
         </div>
         <div>
-          <h4>Producto</h4>
+          <h4 style="margin-bottom: 1.5rem;">Producto</h4>
           <ul class="footer-links">
-            <li><a href="#flujo">Cómo funciona</a></li>
-            <li><a href="#laia">IA Assistant</a></li>
+            <li><a href="#beneficios">Características</a></li>
             <li><a href="#pricing">Precios</a></li>
-            <li><a href="#">Roadmap</a></li>
+            <li><a href="#laia">LAIA Assistant</a></li>
+            <li><a href="#">Seguridad</a></li>
           </ul>
         </div>
         <div>
-          <h4>Recursos</h4>
+          <h4 style="margin-bottom: 1.5rem;">Compañía</h4>
           <ul class="footer-links">
+            <li><a href="#">Sobre nosotros</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="#">Guías</a></li>
-            <li><a href="#">Ayuda</a></li>
-            <li><a href="#">Webinars</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Prensa</a></li>
           </ul>
         </div>
         <div>
-          <h4>Contacto</h4>
+          <h4 style="margin-bottom: 1.5rem;">Legal</h4>
           <ul class="footer-links">
-            <li><i data-lucide="mail"></i> hola@aifisio.es</li>
-            <li><i data-lucide="phone"></i> +34 614 401 448</li>
-            <li><i data-lucide="map-pin"></i> Barcelona, España</li>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Términos</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">RGPD</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 AI.FISIO. Todos los derechos reservados.</p>
-        <div class="legal-links">
-          <a href="#">Privacidad</a>
-          <a href="#">Términos</a>
-          <a href="#">Cookies</a>
-        </div>
+        <p>© 2024 AI.FISIO. Todos los derechos reservados.</p>
+        <p>Hecho con <i data-lucide="heart" style="width: 14px; height: 14px; color: #ef4444; fill: #ef4444;"></i> para fisioterapeutas.</p>
       </div>
     </div>
   </footer>
 
+  <script src="https://unpkg.com/lucide@latest"></script>
   <script>
-    // Initialize Lucide Icons
     lucide.createIcons();
 
-    // Reveal Animations on Scroll
+    // Scroll Header
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('.site-header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Reveal on Scroll
     const observerOptions = {
       threshold: 0.1
     };
@@ -357,16 +429,6 @@
     }, observerOptions);
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-    // Header Scroll Effect
-    window.addEventListener('scroll', () => {
-      const header = document.querySelector('.site-header');
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
   </script>
 </body>
 </html>
