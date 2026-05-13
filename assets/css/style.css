@@ -717,11 +717,32 @@ h2 {
   font-size: 4rem;
   font-weight: 900;
   color: var(--primary);
-  opacity: 0.1;
-  line-height: 1;
-  margin-bottom: 1rem;
 }
 
+/* Premium Micro-Animations & Hover Effects */
+.btn, .btn-ghost, .wa-btn, .btn-outline {
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.btn:hover, .btn-ghost:hover, .wa-btn:hover, .btn-outline:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(26, 190, 212, 0.2);
+}
+.benefit-card, .price-card, .testimonial-card, .faq-item {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.benefit-card:hover, .price-card:hover, .testimonial-card:hover, .faq-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+.dark-theme .benefit-card:hover, .dark-theme .price-card:hover, .dark-theme .testimonial-card:hover, .dark-theme .faq-item:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+.hero-visual img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hero-visual:hover img {
+  transform: scale(1.02);
+}
 .step h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
